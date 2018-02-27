@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="nombreFicheroTSIN" alignment="0" max="32767" attributes="0"/>
+                          <Component id="nombreFicheroTXT" alignment="0" pref="159" max="32767" attributes="0"/>
+                          <Component id="numPuntos" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cargarNubePuntos" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="cargarNubePuntosFich" max="32767" attributes="0"/>
+                              <Component id="cargarFichTSIN" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="desactivateTriangulation" alignment="0" max="32767" attributes="0"/>
+                      <Component id="activateTriangulation" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="clearScreen" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="desactivateCH" alignment="0" max="32767" attributes="0"/>
+                      <Component id="activateCH" alignment="0" max="32767" attributes="0"/>
+                      <Component id="desactivateCircuferences" alignment="0" max="32767" attributes="0"/>
+                      <Component id="activateCircuferences" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="189" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cargarNubePuntos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numPuntos" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cargarNubePuntosFich" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nombreFicheroTXT" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="nombreFicheroTSIN" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cargarFichTSIN" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="activateTriangulation" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="desactivateTriangulation" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="activateCircuferences" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="desactivateCircuferences" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="activateCH" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="desactivateCH" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="35" max="32767" attributes="0"/>
+              <Component id="clearScreen" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="cargarNubePuntos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nube Puntos Aleatoria"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cargarNubePuntosActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cargarNubePuntosFich">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cargar Nube Puntos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cargarNubePuntosFichActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nombreFicheroTXT">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre Fichero"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nombreFicheroTXTActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nombreFicheroTSIN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre Fichero"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nombreFicheroTSINActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cargarFichTSIN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cargar Fichero tsin"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cargarFichTSINActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="numPuntos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero de puntos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numPuntosActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="clearScreen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Limpiar Pantalla"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearScreenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="activateTriangulation">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Activar Triangulacion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="activateTriangulationActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="desactivateTriangulation">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Desactivar Triangulacion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desactivateTriangulationActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="activateCircuferences">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Activar Circuferencias"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="activateCircuferencesActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="desactivateCircuferences">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Desactivar Circunferencias"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desactivateCircuferencesActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="activateCH">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Activar CH"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="activateCHActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="desactivateCH">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Desactivar CH"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desactivateCHActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
